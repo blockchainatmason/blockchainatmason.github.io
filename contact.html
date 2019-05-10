@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    
+    <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
+         rel = "stylesheet">
+      <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+      <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+      <script src= "https://cdn.jsdelivr.net/npm/jquery-validation@1.19.0/dist/jquery.validate.js"></script>
+      
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Blockchain At Mason</title>
+
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <a class="navbar-brand" href="index.html">
+      <img src="BAM.png" alt="Logo" style="width:150px;">
+    </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item ">
+                <a class="nav-link" href="index.html"> Home</a>
+            </li>
+          <li class="nav-item">
+            <a class="nav-link" href="education.html">Education</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="articles.html">Articles</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="research.html">Research</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="resources.html">Resources</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Team.html">Team</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="contact.html">Contact <span class="sr-only">(current)</span></a>
+          </li>   
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container" style="background-color: #ffffff">
+        <div class="row">
+          <div class="col-xs-12 text-left col-lg-offset-1 col-lg-8 col-md-offset-1 col-md-10 col-sm-offset-1 col-sm-10">
+            <h1>Contact</h1>
+            <p>Blockchain at Mason was created to bridge the gap between academia and blockchain, and to spread knowledge of blockchain systems and decentralized technologies that promote a better future. If you can offer an opportunity to reach a large audience, please use the form below. If you're seeking specific answers for your own understanding, please check the <a href="resources.html">educational resources page.</a> For business opportunities or other requests, please use the contact form below:</p>
+            <br>
+
+        <form id="gform" class="cmxform" method="POST"
+        action="https://script.google.com/macros/s/AKfycbzkHN_CLDtCDJI4uwn7AjaUiuI9iVYR0DIJDPbAXA/exec">
+        <div class="form-elements">
+
+       
+          <fieldset>
+            <legend>Please provide your name, email address (won't be published) and a comment</legend>
+            <p>
+              <label for="cname">Name (required, at least 2 characters)</label>
+              <input id="cname" name="name" minlength="2" type="text" required>
+            </p>
+            <p>
+              <label for="cemail">E-Mail (required)</label>
+              <input id="cemail" type="email" name="email" required>
+            </p>
+            <p>
+              <label for="curl">URL (optional)</label>
+              <input id="curl" type="url" name="url">
+            </p>
+            <p>
+              <label for="ccomment">Your comment (required)</label>
+              <textarea id="ccomment" name="comment" required></textarea>
+            </p>
+            <p>Enter Birth Date: <input type = "text" id = "datepicker-1"></p>
+          </fieldset>
+          <fieldset class="pure-group">
+            <legend>What's your favorite programming language:</legend>
+            <input id="radio-group--javascript" type="radio" name="radio-group" value="js" /> <label for="radio-group--javascript">Javascript</label>
+            <input id="radio-group--java" type="radio" name="radio-group" value="java" /> <label for="radio-group--java">Java</label>
+            <input id="radio-group--cplusplus" type="radio" name="radio-group" value="c++" /> <label for="radio-group--cplusplus">C++</label>
+            <input id="radio-group--python" type="radio" name="radio-group" value="python" checked /> <label for="radio-group--python">Python</label>
+            <input id="radio-group--other" type="radio" name="radio-group" value="other" /> <label for="radio-group--other">Other</label>
+          </fieldset>
+    
+
+
+      <button class="button-success pure-button button-xlarge">
+        <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
+    </div>
+
+    <!-- Customise the Thankyou Message People See when they submit the form: -->
+    <div class="thankyou_message" style="display:none;">
+      <h2><em>Thanks</em> for contacting us!
+        We will get back to you soon!</h2>
+    </div>
+  
+        </div>
+
+     </form>
+        
+ </div>  
+ <br>
+ <br>
+    <hr>
+      <footer class="text-center">
+            <div class="container">
+              <div class="row">
+                <div class="col-xs-12">
+                  <p class="footer">This website is developed as an educational project. Certain materials are included under the fair use exemption of the U.S. Copyright Law and have been prepared according to the multimedia fair use guidelines and are restricted from further use</p>
+                </div>
+              </div>
+            </div>
+      </footer>
+              
+      <script>
+        $("#gform").validate();
+        </script>
+     <script>
+         $(function() {
+            $( "#datepicker-1" ).datepicker();
+         });
+      </script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script data-cfasync="false" type="text/javascript"
+src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
+  </body>
+</html>
